@@ -107,12 +107,15 @@ header a {
     width: 135px;
     height: 200px;
     flex-shrink: 0;
+    
 }
 
 .container .thumb .thumb-item figure {
     position: relative;
     width: 100%;
     height: 100%;
+     z-index: 4;
+    
 }
 
 .container .thumb .thumb-item img {
@@ -122,6 +125,8 @@ header a {
     border-radius: 10px;
     filter: brightness(80%);
     display: block;
+     z-index: 4;
+   
 }
 
 .container .thumb .thumb-item .content {
@@ -131,6 +136,7 @@ header a {
     right: 10px;
     color: #eee;
     text-shadow: 0 2px 6px #0006;
+   
 }
 
 .container .arrows {
@@ -141,6 +147,7 @@ header a {
     bottom: 120px;
     left: 120px;
     width: 300px;
+    z-index: 10;
 }
 
 .container .arrows button {
@@ -158,4 +165,102 @@ header a {
 .container .arrows button:hover {
     background-color: rgba(238, 238, 238, 0.39);
     color: #eac26b;
+    transition: 0.7s;
+}
+
+/* Animação da primeira Thumb */
+
+.container.next .thumb {
+    animation: effectNextThumb 0.5s linear 1 forwards;
+}
+
+@keyframes effectNextThumb {
+    from {
+       transform: translateX(150px);
+    }
+}
+
+/* Animação da últma Thumb */
+
+.container.next .thumb-item:nth-last-child(1) {
+   animation: effectLastThumb 0.5s  linear 1 forwards;
+}
+
+@keyframes effectLastThumb {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+/* Animação dos textos */
+
+.container .list .list-item:nth-last-child(1) .content .title,
+.container .list .list-item:nth-last-child(1) .content .description,
+.container .list .list-item:nth-last-child(1) .content .buttons {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+}
+
+@keyframes showContent {
+    to {
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.container .list .list-item:nth-last-child(1) .content .title {
+    animation-delay: 1.2s;
+}
+
+
+.container .list .list-item:nth-last-child(1) .content .description {
+    animation-delay: 1.6s;
+}
+
+.container .list .list-item:nth-last-child(1) .content .buttons {
+    animation-delay: 2s;
+}
+
+/* Animação da Imagem principal, botão next */
+
+.container.next .list .list-item:nth-last-child(1) img {
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 60%;
+    border-radius: 30px;
+    animation: showMainImage 0.5s linear 1 forwards;
+}
+
+@keyframes showMainImage {
+    to {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.container.back .list .list-item:nth-child(1) img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: hideMainImage 0.5s linear 1 forwards;
+    z-index: 2;
+}
+
+@keyframes hideMainImage {
+    to {
+        width: 135px;
+        height: 200px;
+        border-radius: 10px;
+        left: 42%;
+        bottom: 50px;
+    }
 }
