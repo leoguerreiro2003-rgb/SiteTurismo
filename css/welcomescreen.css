@@ -1,0 +1,52 @@
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    z-index: 10;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1100px;
+    height: 430px;
+    padding: 60px;
+    border-radius: 26px;
+    background-color: rgba(238, 238, 238, 0.15);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    z-index: 100;
+    text-align: center;
+}
+
+.popup h2 {
+    font-size: 5.1em;
+}
+
+.popup p {
+    font-size: 1.2em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    line-height: 2.1rem;
+    color: #eee;
+    padding: 55px 40px;
+}
+
+.popup button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    color: #eee;
+    background-color: rgba(238, 238, 238, 0.15);
+    backdrop-filter: blur(6px);
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    border-radius: 20px;
+}

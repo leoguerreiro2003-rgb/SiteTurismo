@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #000;
+    color: #eee;
+    font-size: 12px;
+}
+
+header {
+    width: 80%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    z-index: 10;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1100px;
+    height: 430px;
+    padding: 60px;
+    border-radius: 26px;
+    background-color: rgba(238, 238, 238, 0.15);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    z-index: 100;
+    text-align: center;
+}
+
+.popup h2 {
+    font-size: 5.1em;
+}
+
+.popup p {
+    font-size: 1.2em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    line-height: 2.1rem;
+    color: #eee;
+    padding: 55px 40px;
+}
+
+.popup button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    color: #eee;
+    background-color: rgba(238, 238, 238, 0.15);
+    backdrop-filter: blur(6px);
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    border-radius: 20px;
+}
+
+.popup button:hover {
+    background-color: rgba(238, 238, 238, 0.39);
+    color: #eac26b;
+    transition: 0.5s;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-line {
+    flex: 2;
+    height: 1px;
+    background-color: rgba(238, 238, 238, 0.3);
+    margin-top: 10px;
+    margin-left: 34px;
+    align-self: center;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nav-content h1 {
+    font-size: 1.2rem;
+}
+
+.nav-content a {
+    font-size: .8rem;
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #eee;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background-color: #eac26b;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #eac26b;
+    transition: 0.3s;
+}
+
+header a {
+    color: #eee;
+    margin-right: 40px;
+    font-weight: 300;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    margin-top: -50px;
+    overflow: hidden;
+}
+
+.container .list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container .list .list-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease;
+}
+
+.container .list .list-item:nth-last-child(1) {
+    z-index: 1;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.container .list .list-item:nth-last-child(1) figure {
+    pointer-events: none;
+}
+
+.container .list .list-item:nth-last-child(1) button {
+    pointer-events: auto;
+}
+
+.container .list .list-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--bg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px) brightness(50%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.container .list .list-item img {
+    object-fit: cover;
+    width: 89%;
+    height: 87%;
+    filter: brightness(71%) blur(2px);
+    display: block;
+    border-radius: 26px;
+}
+
+.container .list .list-item figure {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container .list .list-item .content {
+    position: absolute;
+    top: 16%;
+    left: 9%;
+    width: 60%;
+    color: #eee;
+    text-shadow: 0 5px 10px #0004;
+}
+
+.container .list .list-item .title {
+    font-size: 7.2em;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-bottom: 10px;
+}
+
+.container .list .list-item .description {
+    display: inline-block;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    background-color: rgba(238, 238, 238, 0.15);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    padding: 30px 30px;
+    border-radius: 36px;
+    margin-bottom: 55px;
+    margin-left: 2px;
+}
+
+.container .list .list-item button {
+    height: 50px;
+    width: 200px;
+    margin-top: 18px;
+    padding: 0 16px;
+    border: none;
+    color: #eee;
+    background-color: rgba(238, 238, 238, 0.15);
+    backdrop-filter: blur(6px);
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    border-radius: 20px;
+}
+
+.container .list .list-item button:hover {
+    background-color: rgba(238, 238, 238, 0.39);
+    color: #eac26b;
+    transition: 0.5s;
+}
+
+/* Miniaturas */
+.container .thumb {
+    position: absolute;
+    bottom: 120px;
+    left: 48%;
+    transform: translateX(-16%);
+    display: flex;
+    gap: 20px;
+    z-index: 2;
+}
+
+.container .thumb .thumb-item {
+    width: 135px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.container .thumb .thumb-item figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #0006;
+}
+
+.container .thumb .thumb-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(80%);
+    display: block;
+}
+
+.container .thumb .thumb-item .content {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: #eee;
+    text-shadow: 0 2px 6px #0006;
+    z-index: 5;
+}
+
+/* Botões de navegação */
+.container .arrows {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    gap: 10px;
+    bottom: 150px;
+    left: 230px;
+    height: 80px;
+    z-index: 2;
+}
+
+.container .arrows button {
+    border: none;
+    border-radius: 40px;
+    padding: 13px 17px;
+    cursor: pointer;
+    color: #eee;
+    background-color: #eee4;
+    backdrop-filter: blur(5px);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.container .arrows button:hover {
+    background-color: rgba(238, 238, 238, 0.39);
+    color: #eac26b;
+    transition: 0.5s;
+}
+
+/* Animação das miniaturas */
+.container.next .thumb {
+    animation: effectNextThumb 0.5s ease 1 forwards;
+}
+
+@keyframes effectNextThumb {
+    from { transform: translateX(150px); }
+}
+
+.container.next .thumb-item:nth-last-child(1) {
+    animation: effectLastThumb 0.5s ease 1 forwards;
+}
+
+@keyframes effectLastThumb {
+    from { width: 0; opacity: 0; }
+}
+
+/* Animação dos textos */
+.container .list .list-item:nth-last-child(1) .content .title,
+.container .list .list-item:nth-last-child(1) .content .description,
+.container .list .list-item:nth-last-child(1) .content .buttons {
+    transform: translateY(30px);
+    opacity: 0;
+    animation: showContent 0.6s ease forwards;
+}
+
+.container .list .list-item:nth-last-child(1) .content .title {
+    animation-delay: 0.3s;
+}
+
+.container .list .list-item:nth-last-child(1) .content .description {
+    animation-delay: 0.5s;
+}
+
+.container .list .list-item:nth-last-child(1) .content .buttons {
+    animation-delay: 0.7s;
+}
+
+@keyframes showContent {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container .thumb {
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+        width: max-content;
+        gap: 10px;
+    }
+
+    .container .thumb .thumb-item {
+        width: 60px;
+        height: 90px;
+    }
+
+    .container .thumb .thumb-item h3 {
+        display: none;
+    }
+
+    .container .list .list-item .content {
+        padding-right: 20px;
+        left: 5%;
+        width: 90%;
+    }
+
+    .container .list .list-item .content .title {
+        font-size: 2.5em;
+    }
+
+    .container .list .list-item .content .description {
+        font-size: 1em;
+    }
+
+    .popup {
+        width: 90%;
+        max-width: 600px;
+        height: auto;
+        padding: 30px;
+    }
+
+    .popup h2 {
+        font-size: 2.5em;
+    }
+}
