@@ -13,7 +13,7 @@ async function buscarLocais(locais) {
 
         resultados.push({
             name: dados.title,
-            description: dados.extract ? dados.extract.split(".")[0] + "." : "Sem descrição disponível.",
+            description: dados.extract ? dados.extract.split(".").slice(0, 2).join(".") + "." : "Sem descrição disponível.",
             image: dados.thumbnail?.source,
             link: dados.content_urls?.desktop?.page || "#"
         });
