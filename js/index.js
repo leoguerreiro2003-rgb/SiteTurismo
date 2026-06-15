@@ -5,10 +5,24 @@ let list = document.querySelector(".container .list");
 let thumb = document.querySelector(".container .thumb");
 let dotsContainer = document.querySelector(".dots");
 
-document.getElementById("btnFechar").addEventListener("click", () => {
-    document.getElementById("popup").style.display = "none";
-    document.getElementById("overlay").style.display = "none";
-});
+
+const btnFechar = document.getElementById("btnFechar");
+if (btnFechar) {
+
+    if (!localStorage.getItem("popupVisto")) {
+        document.getElementById("popup").style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+    } else {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("overlay").style.display = "none";
+    }
+
+    btnFechar.addEventListener("click", () => {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("overlay").style.display = "none";
+        localStorage.setItem("popupVisto", "true");
+    });
+}
 
 function baralhar(array) {
     return array.sort(() => Math.random() - 0.5);
@@ -16,7 +30,7 @@ function baralhar(array) {
 
 async function iniciarCarrosselDinamico() {
     try {
-        const todosLocais = await buscarLocais();
+        const todosLocais = await buscarDados();
 
         if (todosLocais.length == 0) {
             console.warn("Nenhum local encontrado.");

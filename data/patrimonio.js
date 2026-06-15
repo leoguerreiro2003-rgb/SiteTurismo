@@ -2,10 +2,10 @@ async function buscarDados() {
     const locais = [
         "Cante alentejano",
         "Gastronomia alentejana",
-        "Artesanato alentejano",
-        "Feira de Castro Verde",
-        "Montado",
-        "Cortiça"
+        "Cortiça",
+        "Gastronimia Alentejana",
+        "",
+        "Barragem do Alqueva"
     ];
     return await buscarLocais(locais);
 }

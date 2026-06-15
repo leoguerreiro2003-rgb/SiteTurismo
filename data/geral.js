@@ -1,11 +1,12 @@
 async function buscarDados() {
     const locais = [
         "Beja",
-        "Alentejo",
+        "Baixo Alentejo",
         "Distrito de Beja",
-        "Cante alentejano",
-        "Parque Natural do Vale do Guadiana",
+        "Rio Guadiana",
+        "Montado",
         "Barragem do Alqueva"
+
     ];
-    const resultados = [];
+    return await buscarLocais(locais);
 }
