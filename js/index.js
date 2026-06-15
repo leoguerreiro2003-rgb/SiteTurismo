@@ -79,10 +79,6 @@ async function iniciarCarrosselDinamico() {
             `;
             thumb.appendChild(thumbItem);
 
-            // Dot
-            const dot = document.createElement("span");
-            dot.className = "dot" + (i === locaisSelecionados.length - 1 ? " active" : "");
-            dotsContainer.appendChild(dot);
         });
 
         atualizarFundos();
