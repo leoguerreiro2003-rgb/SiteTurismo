@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Castelo de Beja",
+    "description": "Castelo medieval situado no centro histórico de Beja, construído sobre antigas estruturas romanas. É um dos ex-libris da cidade e oferece uma vista panorâmica sobre o Alentejo.",
+    "image": "assets/cidadebeja.jpg",
+    "link": "https://pt.wikipedia.org/wiki/Castelo_de_Beja"
+  },
+  {
+    "name": "Museu Rainha Dona Leonor",
+    "description": "Instalado no antigo Convento da Conceição, fundado no século XV, alberga uma rica coleção de arte sacra, azulejaria e arqueologia regional do Baixo Alentejo.",
+    "image": "assets/cidadebeja.jpg",
+    "link": "https://pt.wikipedia.org/wiki/Museu_Rainha_Dona_Leonor"
+  },
+  {
+    "name": "Sé de Beja",
+    "description": "Catedral gótica do século XVI, construída sobre uma antiga mesquita islâmica. Destaca-se pelo seu portal manuelino e pelo interior decorado com azulejos.",
+    "image": "assets/cidadebeja.jpg",
+    "link": "https://pt.wikipedia.org/wiki/Sé_de_Beja"
+  }
+]
