@@ -4,7 +4,6 @@ async function buscarDados() {
         "Gastronomia alentejana",
         "Cortiça",
         "Gastronimia Alentejana",
-        "",
         "Barragem do Alqueva"
     ];
     return await buscarLocais(locais);

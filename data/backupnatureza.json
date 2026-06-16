@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Pulo do Lobo",
+    "description": "Espetacular cascata no Rio Guadiana, no coração do Parque Natural do Vale do Guadiana. Um dos fenómenos naturais mais impressionantes do Alentejo, especialmente em época de chuvas.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Pulo_do_Lobo"
+  },
+  {
+    "name": "Parque Natural do Vale do Guadiana",
+    "description": "Área protegida que acompanha o vale do Rio Guadiana, com uma enorme biodiversidade, incluindo aves rupícolas, linces e vegetação mediterrânica bem preservada.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Parque_Natural_do_Vale_do_Guadiana"
+  },
+  {
+    "name": "Barragem do Alqueva",
+    "description": "A maior albufeira artificial da Europa Ocidental, criada pelo represamento do Rio Guadiana. Transformou a agricultura alentejana e é hoje um destino turístico de referência.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Barragem_do_Alqueva"
+  },
+  {
+    "name": "Vila Nova de Milfontes",
+    "description": "Vila costeira na foz do Rio Mira, pertencente ao Parque Natural do Sudoeste Alentejano e Costa Vicentina. Conhecida pelas suas praias de águas cristalinas e paisagem selvagem.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Vila_Nova_de_Milfontes"
+  },
+  {
+    "name": "Rio Guadiana",
+    "description": "Rio ibérico que nasce em Espanha e desagua no Algarve, formando parte da fronteira entre Portugal e Espanha. Essencial para a agricultura e ecossistemas do Alentejo.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Rio_Guadiana"
+  },
+  {
+    "name": "Montado",
+    "description": "Ecossistema único da Península Ibérica, dominado pelo sobreiro e pela azinheira. É um dos sistemas agro-florestais mais biodiversos da Europa e berço da cortiça portuguesa.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Montado"
+  }
+]
