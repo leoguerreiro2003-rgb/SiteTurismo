@@ -5,7 +5,7 @@ async function buscarDados() {
         "Barragem do Alqueva",
         "Vila Nova de Milfontes",
         "Rio Guadiana",
-        "Montado",
+        "Montado"
     ];
     return await buscarLocais(locais);
 }

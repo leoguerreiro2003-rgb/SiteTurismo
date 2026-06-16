@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Beja",
+    "description": "Capital do Baixo Alentejo, conhecida pela sua história milenar que remonta à época romana como Pax Julia. Centro cultural e administrativo da região alentejana.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Beja"
+  },
+  {
+    "name": "Baixo Alentejo",
+    "description": "Sub-região do Alentejo caracterizada por vastas planícies, montados de sobro e azinho, olivais e vinhas. Conhecida pela tranquilidade da paisagem e riqueza cultural.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Baixo_Alentejo"
+  },
+  {
+    "name": "Distrito de Beja",
+    "description": "O maior distrito de Portugal em área, com uma paisagem dominada pelo cereal, pelo olival e pelo montado. Integra concelhos como Serpa, Moura, Mértola e Odemira.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Distrito_de_Beja"
+  },
+  {
+    "name": "Rio Guadiana",
+    "description": "Rio ibérico que nasce em Espanha e desagua no Algarve, formando parte da fronteira entre Portugal e Espanha. Essencial para a agricultura e ecossistemas do Alentejo.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Rio_Guadiana"
+  },
+  {
+    "name": "Montado",
+    "description": "Ecossistema único da Península Ibérica, dominado pelo sobreiro e pela azinheira. É um dos sistemas agro-florestais mais biodiversos da Europa e berço da cortiça portuguesa.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Montado"
+  },
+  {
+    "name": "Barragem do Alqueva",
+    "description": "A maior albufeira artificial da Europa Ocidental, criada pelo represamento do Rio Guadiana. Transformou a agricultura alentejana e é hoje um destino turístico de referência.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Barragem_do_Alqueva"
+  }
+]

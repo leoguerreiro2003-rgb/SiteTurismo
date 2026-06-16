@@ -1,0 +1,28 @@
+
+
+[
+  {
+    "name": "Cante Alentejano",
+    "description": "Forma de canto coral a cappella, Património Cultural Imaterial da Humanidade pela UNESCO desde 2014. Expressa a identidade e memória coletiva das comunidades do Alentejo.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Cante_alentejano"
+  },
+  {
+    "name": "Gastronomia Alentejana",
+    "description": "Rica tradição culinária baseada no pão alentejano, enchidos, queijos, carnes de porco preto e azeite. Pratos como a açorda, as migas e o cozido são ex-libris desta cozinha.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Gastronomia_alentejana"
+  },
+  {
+    "name": "Cortiça",
+    "description": "Portugal é o maior produtor mundial de cortiça, extraída do sobreiro. O Alentejo concentra grande parte dos montados de sobro, sendo a cortiça usada em rolhas, isolamento e moda.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Cortiça"
+  },
+  {
+    "name": "Barragem do Alqueva",
+    "description": "A maior albufeira artificial da Europa Ocidental, criada pelo represamento do Rio Guadiana. Transformou a agricultura alentejana e é hoje um destino turístico de referência.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Barragem_do_Alqueva"
+  }
+]
