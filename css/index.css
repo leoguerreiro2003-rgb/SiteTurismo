@@ -91,7 +91,7 @@ nav {
 }
 
 .nav-content .logo-text {
-    filter: brightness(0) invert(1); 
+    filter: brightness(0) invert(1);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -318,18 +318,11 @@ header a {
     position: absolute;
     bottom: 10px;
     left: 7px;
-    right: 10px;
     width: fit-content;
     color: #eee;
-    text-shadow: 0 2px 6px #0006;
-    z-index: 5;
-    border: none;
     background-color: rgba(238, 238, 238, 0.15);
     backdrop-filter: blur(6px);
     font-family: "Montserrat", sans-serif;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     border-radius: 10px;
     padding: 3px;
     font-size: 0.7rem;
@@ -434,36 +427,49 @@ footer p {
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
+
+@media (max-height: 650px) {
+    .container .list .list-item .content {
+        left: 5%;
+        width: 50%;
+    }
+
     .container .thumb {
-        left: 50%;
-        bottom: 20px;
-        transform: translateX(-50%);
-        width: max-content;
+        left: auto;
+        right: 20px;
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+        flex-direction: column;
         gap: 10px;
     }
 
     .container .thumb .thumb-item {
-        width: 60px;
-        height: 90px;
+        width: 100px;
+        height: 140px;
+        flex-shrink: 0;
     }
 
-    .container .thumb .thumb-item h3 {
-        display: none;
+    .container .thumb .thumb-item .content {
+        display: block;
+        font-size: 0.6rem;
+        width: fit-content;
     }
 
-    .container .list .list-item .content {
-        padding-right: 20px;
-        left: 5%;
-        width: 90%;
+    .container .arrows {
+        left: 9%;
+        bottom: 60px;
+        top: auto;
     }
 
-    .container .list .list-item .content .title {
+    .container .list .list-item .title {
         font-size: 2.5em;
     }
 
-    .container .list .list-item .content .description {
+    .container .list .list-item .description {
         font-size: 1em;
+        padding: 15px;
+        margin-bottom: 20px;
     }
 
     .popup {
@@ -475,5 +481,38 @@ footer p {
 
     .popup h2 {
         font-size: 2.5em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container .list .list-item .content {
+        width: 45%;
+    }
+
+    .container .thumb {
+        left: auto;
+        right: 20px;
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container .thumb .thumb-item {
+        width: 100px;
+        height: 140px;
+        flex-shrink: 0;
+    }
+
+    .container .thumb .thumb-item .content {
+        display: block;
+        font-size: 0.6rem;
+    }
+
+    .container .arrows {
+        left: 9%;
+        bottom: 60px;
+        top: auto;
     }
 }
