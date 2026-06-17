@@ -1,0 +1,76 @@
+================================================================================
+                         CONHECER BEJA - INFORMAÇÃO DO PROJETO
+================================================================================
+
+AUTOR:
+
+Leandro Pinto
+
+
+
+REQUISITOS CUMPRIDOS:
+
+
+ Página HTML inicial com o nome index.html
+     - Ficheiro presente na raiz do projeto.
+
+Página(s) HTML com título(s)
+     - As 4 páginas (index, patrimonio, natureza, atracoes) incluem a tag <title>.
+
+Rodapé com indicação de site original
+     - Todas as páginas indicam no rodapé que o site é original, sem uso de
+       modelo Bootstrap (Bootstrap 5 foi apenas uma sugestão, não obrigatória).
+
+ HTML, CSS e JavaScript em ficheiros separados
+     - HTML nas páginas .html; estilos em css/; lógica em js/, data/ e services/.
+     - Não há CSS nem JavaScript embutido nas páginas HTML.
+
+ Imagens na pasta assets
+     - Todas as imagens do projeto estão guardadas em assets/.
+
+ Imagens com tamanho máximo de 1 MB
+     - Todas as imagens cumprem o limite (a maior é pulodolobo.jpg, ~690 KB).
+
+ HTML sem erros (validação)
+     - As 4 páginas HTML foram validadas com o validador W3C Nu Validator.
+
+ Utilização de API e ficheiro JSON
+     - API REST da Wikipedia (pt.wikipedia.org) para obter dados dinâmicos.
+     - Ficheiros JSON de backup em data/backupdata/ como alternativa local.
+
+ Código JavaScript com comentários
+     - Comentários presentes no código mais relevante (ex.: construção dos
+       slides do carrossel em js/index.js).
+
+
+
+REQUISITOS NÃO CUMPRIDOS:
+
+
+Todos os Requisitos foram cumpridos.
+
+
+
+FLUXO DA API E FUNCIONALIDADES JAVASCRIPT:
+
+
+FLUXO DA API:
+
+- Cada página carrega wikipediaservice.js, um ficheiro data/*.js da secção e
+  index.js, que inicia o carrossel ao abrir a página.
+- buscarDados() envia os nomes dos locais para buscarLocais(), que consulta a
+  API REST da Wikipedia e devolve título, descrição, imagem e link.
+- Se a API falhar, os dados são carregados a partir do JSON de backup em
+  data/backupdata/.
+
+FUNCIONALIDADES JAVASCRIPT:
+
+- iniciarCarrosselDinamico(): obtém os dados, baralha a lista, escolhe 6
+  locais e cria os slides e miniaturas na página.
+- moveItemsOnClick(): navega o carrossel para a frente ou para trás com animação.
+- atualizarFundos(): define a imagem de fundo de cada slide após o carregamento.
+- Popup de boas-vindas (index.html): aparece na primeira visita e guarda o
+  estado em localStorage para não voltar a mostrar.
+- Botão "Saber Mais": abre o artigo completo da Wikipedia num novo separador.
+
+

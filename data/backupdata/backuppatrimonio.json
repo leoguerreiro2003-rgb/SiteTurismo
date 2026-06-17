@@ -2,19 +2,19 @@
   {
     "name": "Cante Alentejano",
     "description": "Forma de canto coral a cappella, Património Cultural Imaterial da Humanidade pela UNESCO desde 2014. Expressa a identidade e memória coletiva das comunidades do Alentejo.",
-    "image": "",
+    "image": "assets/cante.jpg",
     "link": "https://pt.wikipedia.org/wiki/Cante_alentejano"
   },
   {
     "name": "Cortiça",
     "description": "Portugal é o maior produtor mundial de cortiça, extraída do sobreiro. O Alentejo concentra grande parte dos montados de sobro, sendo a cortiça usada em rolhas, isolamento e moda.",
-    "image": "",
+    "image": "assets/cortica.jpg",
     "link": "https://pt.wikipedia.org/wiki/Cortiça"
   },
   {
     "name": "Capote Alentejano",
-    "description": "Portugal é o maior produtor mundial de cortiça, extraída do sobreiro. O Alentejo concentra grande parte dos montados de sobro, sendo a cortiça usada em rolhas, isolamento e moda.",
-    "image": "",
-    "link": "https://pt.wikipedia.org/wiki/Cortiça"
+    "description": "O capote alentejano dizem ter a sua origem nos trajes no Alentejo, contudo este traje também era usado na Serra da Estrela e, outrora em Trás Dos Montes.[1] É um traje longo e sem mangas que possui uma sobrecapa que cai até à altura do peito e pode possuir uma gola geralmente em pele de raposa.",
+    "image": "assets/capote.jpg",
+    "link": "https://pt.wikipedia.org/wiki/Capote_alentejano"
   }
 ]

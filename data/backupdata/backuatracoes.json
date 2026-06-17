@@ -8,13 +8,19 @@
   {
     "name": "Museu Rainha Dona Leonor",
     "description": "Instalado no antigo Convento da Conceição, fundado no século XV, alberga uma rica coleção de arte sacra, azulejaria e arqueologia regional do Baixo Alentejo.",
-    "image": "assets/cidadebeja.jpg",
+    "image": "",
     "link": "https://pt.wikipedia.org/wiki/Museu_Rainha_Dona_Leonor"
   },
   {
     "name": "Sé de Beja",
     "description": "Catedral gótica do século XVI, construída sobre uma antiga mesquita islâmica. Destaca-se pelo seu portal manuelino e pelo interior decorado com azulejos.",
-    "image": "assets/cidadebeja.jpg",
+    "image": "assets/museu.jpg",
     "link": "https://pt.wikipedia.org/wiki/Sé_de_Beja"
+  },
+  {
+    "name": "Feira de Castro Verde",
+    "description": "Feira tradicional anual em Castro Verde, instituída em 1620 por D. Filipe II, considerada uma das mais antigas e importantes do sul de Portugal. Realiza-se no terceiro fim de semana de outubro e mantém viva a tradição comercial e cultural alentejana.",
+    "image": "",
+    "link": "https://pt.wikipedia.org/wiki/Feira_de_Castro"
   }
 ]

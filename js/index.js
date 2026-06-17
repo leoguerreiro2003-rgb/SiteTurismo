@@ -6,6 +6,7 @@ let thumb = document.querySelector(".container .thumb");
 let dotsContainer = document.querySelector(".dots");
 
 
+// Popup de boas-vindas: mostra na primeira visita e guarda o estado em localStorage.
 const btnFechar = document.getElementById("btnFechar");
 if (btnFechar) {
 
@@ -28,12 +29,13 @@ function baralhar(array) {
     return array.sort(() => Math.random() - 0.5);
 }
 
+// Obtém os dados (API ou JSON via buscarDados), baralha a lista e cria os slides do carrossel.
 async function iniciarCarrosselDinamico() {
     try {
-        const todosLocais = await buscarDados();
+        const todosLocais = (await buscarDados()).filter(local => local.image);
 
-        if (todosLocais.length == 0) {
-            console.warn("Nenhum local encontrado.");
+        if (todosLocais.length === 0) {
+            console.log("Nenhum local encontrado na API nem no backup local.");
             return;
         }
 
@@ -89,6 +91,7 @@ async function iniciarCarrosselDinamico() {
     }
 }
 
+// Define a imagem de fundo de cada slide após o carregamento da imagem.
 function atualizarFundos() {
     document.querySelectorAll(".list-item").forEach(item => {
         const img = item.querySelector("img");
@@ -104,6 +107,7 @@ function configurarCliques() {
     btnBack.onclick = () => moveItemsOnClick("back");
 }
 
+// Navega o carrossel para a frente ou para trás com animação css.
 function moveItemsOnClick(direction) {
     const items = list.querySelectorAll(".list-item");
     const thumbItems = thumb.querySelectorAll(".thumb-item");
