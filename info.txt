@@ -56,10 +56,10 @@ FLUXO DA API E FUNCIONALIDADES JAVASCRIPT:
 
 FLUXO DA API:
 
-- Cada página carrega wikipediaservice.js, um ficheiro data/*.js da secção e
+- Cada página carrega wikipediaservice.js, um ficheiro data/.js da secção e
   index.js, que inicia o carrossel ao abrir a página.
 - buscarDados() envia os nomes dos locais para buscarLocais(), que consulta a
-  API REST da Wikipedia e devolve título, descrição, imagem e link.
+  API da Wikipedia e devolve título, descrição, imagem e link.
 - Se a API falhar, os dados são carregados a partir do JSON de backup em
   data/backupdata/.
 

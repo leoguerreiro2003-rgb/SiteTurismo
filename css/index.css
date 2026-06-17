@@ -422,6 +422,10 @@ footer {
     margin-left: 2px;
 }
 
+footer p {
+    padding: 0 10px;
+}
+
 @keyframes showContent {
     to {
         transform: translateY(0);

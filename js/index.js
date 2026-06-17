@@ -25,6 +25,9 @@ if (btnFechar) {
     });
 }
 
+
+
+// Baralha o conteúdo recebido 
 function baralhar(array) {
     return array.sort(() => Math.random() - 0.5);
 }
@@ -34,7 +37,7 @@ async function iniciarCarrosselDinamico() {
     try {
         const todosLocais = (await buscarDados()).filter(local => local.image);
 
-        if (todosLocais.length === 0) {
+        if (todosLocais.length == 0) {
             console.log("Nenhum local encontrado na API nem no backup local.");
             return;
         }
@@ -115,7 +118,7 @@ function moveItemsOnClick(direction) {
     container.classList.add(direction);
 
     setTimeout(() => {
-        if (direction === "next") {
+        if (direction == "next") {
             list.appendChild(items[0]);
             thumb.appendChild(thumbItems[0]);
         } else {
